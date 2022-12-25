@@ -1,0 +1,18 @@
+package hello;
+syntax = "proto3";
+
+// Definition av Greeter service
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+}
+
+// Properties för hello-request
+message HelloRequest {
+  string name = 1;
+}
+
+// Properties för hello-response
+message HelloReply {
+  string message = 1;
+}

@@ -1,0 +1,19 @@
+{
+    "name": "grpc-test",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "Test av gRPC",
+    "scripts": {
+        "start:server": "node ./src/server/server.js",
+        "start:client": "node ./src/client/client.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@grpc/grpc-js": "^1.8.0",
+        "cli-menu": "^1.0.0",
+        "dotenv": "^16.0.3",
+        "minimist": "^1.2.7"
+    }
+}

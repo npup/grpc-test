@@ -1,0 +1,20 @@
+package diceroll;
+syntax = "proto3";
+
+// Definition av Dice service
+service Dice {
+  // Begär resultat av ett tärningsslag
+  rpc DiceRoll (DiceRollRequest) returns (DiceRollReply) {}
+}
+
+// Properties för begäran av resultat av tärningsslag
+message DiceRollRequest {
+  int32 diceCount = 1;
+  int32 diceSize = 2;
+}
+
+// Properties för resultat av tärningsslag
+message DiceRollReply {
+  string dice = 1;
+  int32 roll = 2;
+}
